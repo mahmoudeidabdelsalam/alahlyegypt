@@ -11,6 +11,10 @@ class App extends Controller
         return get_bloginfo('name');
     }
 
+    public function siteSocial() {
+        return get_field('social_networks', 'option');
+    }
+    
     public static function title()
     {
         if (is_home()) {

@@ -23,6 +23,7 @@
   <meta name="theme-color" content="#1E6CFC">
   <meta name="robots" content="index, follow" />
     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!-- Head Scripts -->
   @if(get_field('header_scripts', 'option'))
     {{ the_field('header_scripts', 'option') }}

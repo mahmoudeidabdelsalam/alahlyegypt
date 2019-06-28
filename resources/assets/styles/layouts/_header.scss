@@ -5,3 +5,107 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.banner {
+  .navbar-nav {
+    .menu-item {
+      .nav-link {
+        color: $brand-white !important;
+        border-bottom: 4px solid transparent;
+        transition: all 0.6s ease-in-out;
+
+        &:hover {
+          border-bottom: 4px solid $brand-white;
+        }
+      }
+
+      &.active {
+        .nav-link {
+          border-bottom: 4px solid $brand-white;
+        }
+      }
+    }
+  }
+}
+
+nav.top-banner {
+  background-color: $brand-white;
+  border-bottom: 2px solid $brand-light;
+  display: block;
+  min-height: 45px;
+
+  .headerSocial {
+    a {
+      border-left: 1px solid rgb(228, 228, 228);
+      color: rgb(111, 121, 122);
+      display: flex;
+      float: left;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        display: inline-block;
+        font-size: 20px;
+        transition: all 0.6s ease-in-out;
+
+        &.fa-facebook {
+          &:hover {
+            color: rgb(69, 97, 157) !important;
+          }
+        }
+
+        &.fa-twitter {
+          &:hover {
+            color: rgb(0, 172, 238) !important;
+          }
+        }
+
+        &.fa-google {
+          &:hover {
+            color: rgb(218, 72, 52) !important;
+          }
+        }
+
+        &.fa-youtube {
+          &:hover {
+            color: rgb(204, 24, 30) !important;
+          }
+        }
+
+        &.fa-instagram {
+          &:hover {
+            color: rgb(64, 111, 149) !important;
+          }
+        }
+      }
+
+      &:hover {
+        i {
+          transform: scale3d(1.5, 1.5, 1.5);
+        }
+      }
+    }
+  }
+  /* stylelint-disable */
+  .nav-top {
+    li {
+      a {
+        border-left: 1px solid rgb(228, 228, 228);
+        color: rgb(111, 121, 122);
+        font-size: 13px;
+        line-height: 25px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding-bottom: 0;
+        padding-top: 0;
+
+        &:hover {
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+  /* stylelint-enable */
+}

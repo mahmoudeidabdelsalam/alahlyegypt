@@ -2,6 +2,7 @@
 
 /** Import everything from autoload */
 @import "./autoload/**/*";
+@import url("https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap&subset=arabic");
 
 /**
  * Import npm dependencies
@@ -12,14 +13,6 @@
 // @import "~some-node-module";
 
 /** Import theme styles */
-@import "common/global";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+@import "common/*";
+@import "components/*";
+@import "layouts/*";
